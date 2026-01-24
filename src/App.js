@@ -1,54 +1,51 @@
 import "./App.css";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+
+const PANES = 7;
 
 function App() {
+  const [flipped, setFlipped] = useState(
+    Array.from({ length: PANES }, (_, i) => i % 2 === 1)
+  );
 
-  const containerRef = useRef(null);
+  const onEnter = (i, e) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    const fromLeft = e.clientX < rect.left + rect.width / 2;
 
-  const handleMove = (e) => {
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = (e.clientX - rect.left) / rect.width;
-    containerRef.current.style.setProperty("--reveal", x);
-  };
-
-  const handleTouchMove = (e) => {
-    const rect = containerRef.current.getBoundingClientRect();
-    const x = (e.touches[0].clientX - rect.left) / rect.width;
-    containerRef.current.style.setProperty("--reveal", x);
+    setFlipped((prev) => {
+      const next = [...prev];
+      next[i] = fromLeft;
+      return next;
+    });
   };
 
   return (
-    <div>
+    <div className="main-container">
       <header className="header">
         <img
           src="/logo.png"
           alt="Mere Interference Logo"
-          id="logo"
+          className="logo"
           width="200px"
         />
         <h2>mere interference</h2>
       </header>
-      <div
-        ref={containerRef}
-        className="images"
-        onMouseMove={handleMove}
-        onTouchMove={handleTouchMove}
-      >
-        <img
-          src="rocks.png"
-          alt="Heart Rocks Image"
-          className="img rocks"
-          width="800px"
-          height="450px"
-        />
-        <img
-          src="lab.png"
-          alt="Physics Lab Room Image"
-          className="img lab"
-          width="800px"
-          height="450px"
-        />
+
+      <div className="panes">
+        {Array.from({ length: PANES }).map((_, i) => (
+          <div
+            key={i}
+            className={`pane ${flipped[i] ? "flipped" : ""}`}
+            onMouseEnter={(e) => onEnter(i, e)}
+          >
+            <div className="pane-inner" style={{ "--i": i, "--count": PANES }}>
+              <div className="face front" />
+              <div className="face back" />
+            </div>
+          </div>
+        ))}
       </div>
+
       <div className="links">
         <h4>about</h4>
         <h4>script</h4>
