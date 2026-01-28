@@ -1,5 +1,5 @@
 import "./App.css";
-import { useRef, useState } from "react";
+import { useState } from "react";
 
 const PANES = 7;
 
@@ -28,7 +28,15 @@ function App() {
           className="logo"
           width="200px"
         />
-        <h2>mere interference</h2>
+        <div style={{ display: "flex", justifyContent: "center" }}>
+          <h2>mere</h2>
+          <h2
+            className="red-text"
+            style={{ margin: "16px 0px 0px 10px", fontSize: "32px" }}
+          >
+            interference
+          </h2>
+        </div>
       </header>
 
       <div className="panes">
@@ -48,9 +56,9 @@ function App() {
 
       <div className="links">
         <h4>about</h4>
-        <h4>script</h4>
+        <h3 className="red-text">script</h3>
         <h4>cast and crew</h4>
-        <h4>donate</h4>
+        <h3 className="red-text">donate</h3>
         <h4>contact</h4>
       </div>
     </div>
