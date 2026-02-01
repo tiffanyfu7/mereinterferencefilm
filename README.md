@@ -1,1 +1,2 @@
 mereinterferencefilm.com
+npm start

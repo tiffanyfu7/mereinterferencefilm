@@ -1,5 +1,8 @@
 import "./App.css";
+import { Link, Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import Script from "./pages/Script";
+import Header from "./Header";
 
 const PANES = 7;
 
@@ -20,48 +23,47 @@ function App() {
   };
 
   return (
-    <div className="main-container">
-      <header className="header">
-        <img
-          src="/logo.png"
-          alt="Mere Interference Logo"
-          className="logo"
-          width="200px"
-        />
-        <div style={{ display: "flex", justifyContent: "center" }}>
-          <h2>mere</h2>
-          <h2
-            className="red-text"
-            style={{ margin: "16px 0px 0px 10px", fontSize: "32px" }}
-          >
-            interference
-          </h2>
-        </div>
-      </header>
+    <Routes>
+      <Route
+        path="/"
+        element={
+          <div className="main-container">
+            <Header />
 
-      <div className="panes">
-        {Array.from({ length: PANES }).map((_, i) => (
-          <div
-            key={i}
-            className={`pane ${flipped[i] ? "flipped" : ""}`}
-            onMouseEnter={(e) => onEnter(i, e)}
-          >
-            <div className="pane-inner" style={{ "--i": i, "--count": PANES }}>
-              <div className="face front" />
-              <div className="face back" />
+            <div className="panes">
+              {Array.from({ length: PANES }).map((_, i) => (
+                <div
+                  key={i}
+                  className={`pane ${flipped[i] ? "flipped" : ""}`}
+                  onMouseEnter={(e) => onEnter(i, e)}
+                >
+                  <div
+                    className="pane-inner"
+                    style={{ "--i": i, "--count": PANES }}
+                  >
+                    <div className="face front" />
+                    <div className="face back" />
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="links">
+              <h4>about</h4>
+              <h3 className="red-text">
+                <Link to="/script" className="link-reset">
+                  script
+                </Link>
+              </h3>
+              <h4>cast and crew</h4>
+              <h3 className="red-text">donate</h3>
+              <h4>contact</h4>
             </div>
           </div>
-        ))}
-      </div>
-
-      <div className="links">
-        <h4>about</h4>
-        <h3 className="red-text">script</h3>
-        <h4>cast and crew</h4>
-        <h3 className="red-text">donate</h3>
-        <h4>contact</h4>
-      </div>
-    </div>
+        }
+      />
+      <Route path="/script" element={<Script />} />
+    </Routes>
   );
 }
 
