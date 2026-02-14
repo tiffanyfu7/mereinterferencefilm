@@ -5,7 +5,7 @@ function Header() {
         src="/logo.png"
         alt="Mere Interference Logo"
         className="logo"
-        width="200px"
+        width="150px"
       />
       <div style={{ display: "flex", justifyContent: "center" }}>
         <h2>mere</h2>

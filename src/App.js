@@ -1,8 +1,13 @@
 import "./App.css";
-import { Link, Routes, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import { useState } from "react";
+import Links from "./Links";
+import About from "./pages/About";
 import Script from "./pages/Script";
+import CastCrew from "./pages/CastCrew";
+import Contact from "./pages/Contact";
 import Header from "./Header";
+import Donate from "./pages/Donate";
 
 const PANES = 7;
 
@@ -48,21 +53,15 @@ function App() {
               ))}
             </div>
 
-            <div className="links">
-              <h4>about</h4>
-              <h3 className="red-text">
-                <Link to="/script" className="link-reset">
-                  script
-                </Link>
-              </h3>
-              <h4>cast and crew</h4>
-              <h3 className="red-text">donate</h3>
-              <h4>contact</h4>
-            </div>
+            <Links />
           </div>
         }
       />
+      <Route path="/about" element={<About />} />
       <Route path="/script" element={<Script />} />
+      <Route path="/castcrew" element={<CastCrew />} />
+      <Route path="/donate" element={<Donate />} />
+      <Route path="/contact" element={<Contact />} />
     </Routes>
   );
 }

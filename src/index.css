@@ -28,8 +28,9 @@ body {
 
 .red-text {
   font-family: "Brush Script MT";
+  font-size: 24px;
   color: red;
-  padding: auto;
+  margin: auto;
 }
 
 .logo {

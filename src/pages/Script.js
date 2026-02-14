@@ -8,7 +8,7 @@ function Script() {
   return (
     <div className="main-container">
       <Link to="/" className="link-reset">
-        <Header/>
+        <Header />
       </Link>
       <div className="pdf-viewer">
         <Worker
