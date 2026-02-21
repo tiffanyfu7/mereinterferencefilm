@@ -9,7 +9,9 @@ function CastCrew() {
       <Link to="/" className="link-reset">
         <Header />
       </Link>
-      <div></div>
+      <div>
+        <h3>Director</h3>
+      </div>
     </div>
   );
 }

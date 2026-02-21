@@ -14,6 +14,10 @@ function About() {
         {/* Screenwriting */}
         {/* Preproduction */}
         {/* Production */}
+
+        {/* Logline */}
+        {/* Timeline */}
+        {/* Inspo */}
       </div>
     </div>
   );
