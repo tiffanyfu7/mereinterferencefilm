@@ -11,6 +11,7 @@ function Contact() {
       </Link>
       <div>
         <p>email: tiffany.fu7@gmail.com</p>
+        <p>insta: mereinterferencefilm</p>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@ function Links() {
         </Link>
       </h4>
 
-      <h3 className="red-text">
+      <h3 className="red-text" style={{ fontSize: "24px" }}>
         <Link to="/script" className="link-reset">
           script
         </Link>
@@ -21,7 +21,7 @@ function Links() {
         </Link>
       </h4>
 
-      <h3 className="red-text">
+      <h3 className="red-text" style={{ fontSize: "24px" }}>
         <Link to="/donate" className="link-reset">
           donate
         </Link>
