@@ -11,7 +11,10 @@ function About() {
       </Link>
       <div className="about">
         <h2>Logline</h2>
-        <p>Willow has one hour open on Sundays. Xyla wants it.</p>
+        <p>
+          When two mismatched girls are paired as physic lab partners, a mere
+          interference unexpectedly turns into an unbreakable entanglement.
+        </p>
 
         <h1 className="red-text">Synopsis</h1>
         <div className="paragraphs">
