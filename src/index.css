@@ -113,11 +113,33 @@ p {
   opacity: 75%;
 }
 
-.about {
+.about,
+.cast-bio {
   width: 80vw;
   max-width: 500px;
   text-align: left;
   margin: auto;
+}
+
+.cast-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cast-title{
+  font-family: "Brush Script MT";
+  color: red;
+  font-size: 30px;
+}
+
+ul {
+  margin-top: 0;
+  padding-left: 20px;
+}
+
+ul li {
+  line-height: 1.6;
+  margin-bottom: 6px;
 }
 
 @media (max-width: 768px) {

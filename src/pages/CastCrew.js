@@ -10,7 +10,24 @@ function CastCrew() {
         <Header />
       </Link>
       <div>
-        <h3>Director</h3>
+        <div className="cast-bio">
+          <h3 className="cast-header">
+            <span className="cast-name">Tiffany Lin Fu</span>
+            <span className="cast-title">Director</span>
+          </h3>
+          <p>
+            Inspired by Everything Everywhere All At Once, Alice Wu, Kurt
+            Vonnegut, tiny homes, and fun hats. First-time director / producer /
+            human trying to live out her best life. Right brain enjoys doodling,
+            left brain enjoys finite state machines.
+          </p>
+        </div>
+        <img
+          src="/tiffany_card.png"
+          alt="Tiffany Fu"
+          className="cast_cards"
+          width="400px"
+        />
       </div>
     </div>
   );

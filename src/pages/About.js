@@ -20,10 +20,9 @@ function About() {
         <div className="paragraphs">
           <p>
             <i>Mere Interference</i> is a romantic drama about two college
-            freshmen unexpectedly paired as lab partners in physics class. As
-            they explore topics like light interference, momentum, and quantum
-            entanglement, they begin drawing surprising parallels between the
-            science and their own lives. What begins as a reluctant
+            freshmen. As they explore topics like light interference, momentum,
+            and quantum entanglement, they begin drawing surprising parallels
+            between the science and their own lives. What begins as a reluctant
             collaboration slowly evolves into something deeper, forcing one of
             them to decide whether to follow her meticulously planned future or
             risk it all for a connection she never saw coming.
@@ -53,7 +52,7 @@ function About() {
             This film is my attempt to reconcile the two sides of myself I was
             taught to keep separate: the logical and the creative, the
             scientific and the philosophical. At a moment when the humanities
-            feel increasingly embattled by the dominance of technology and
+            feels increasingly challenged by the dominance of technology and
             quantifiable outcomes, I wanted to make something that asks whether
             those categories were ever real — whether the most rigorous
             scientific experiment and the most vulnerable human encounter might
@@ -70,11 +69,13 @@ function About() {
         <p>Coming-of-age | Queer Romance | Achievement + Sell-out Culture</p>
 
         <h2>Production Timeline</h2>
-        <p>Ideation (Oct 23 - Oct 25) </p>
-        <p>Screenwriting (Oct 25 - Dec 25) </p>
-        <p>Preproduction (Jan 26 - Mar 26) </p>
-        <p>Production (Apr 26) </p>
-        <p>Wrap (May 26)</p>
+        <ul>
+          <li>Ideation (Oct 23 - Oct 25)</li>
+          <li>Screenwriting (Oct 25 - Dec 25)</li>
+          <li>Preproduction (Jan 26 - Mar 26)</li>
+          <li>Production (Apr 26)</li>
+          <li>Wrap (May 26)</li>
+        </ul>
       </div>
     </div>
   );
