@@ -18,8 +18,8 @@ function CastCrew() {
           <p>
             Inspired by Everything Everywhere All At Once, Alice Wu, Kurt
             Vonnegut, tiny homes, and fun hats. First-time director / producer /
-            human trying to live out her best life. Right brain enjoys doodling,
-            left brain enjoys finite state machines.
+            human trying to live out her best life. Left brain enjoys finite
+            state machines, right brain enjoys doodling.
           </p>
         </div>
         <img
