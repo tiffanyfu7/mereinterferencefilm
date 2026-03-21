@@ -9,7 +9,10 @@ function Donate() {
       <Link to="/" className="link-reset">
         <Header />
       </Link>
-      <div></div>
+      <div>
+        <img src="/venmo_qr.jpg" alt="Venmo" width="370px" />
+        <p>venmo: @mereinterferencefilm</p>
+      </div>
     </div>
   );
 }

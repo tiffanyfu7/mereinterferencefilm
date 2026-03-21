@@ -17,16 +17,16 @@ function CastCrew() {
           </h3>
           <p>
             Inspired by Everything Everywhere All At Once, Alice Wu, Kurt
-            Vonnegut, tiny homes, and fun hats. First-time director / producer /
-            human trying to live out her best life. Left brain enjoys finite
-            state machines, right brain enjoys doodling.
+            Vonnegut, tiny homes, and fun hats.  A first-time director / producer /
+            human. Left brain enjoys finite state machines, right brain enjoys
+            typography.
           </p>
         </div>
         <img
           src="/tiffany_card.png"
           alt="Tiffany Fu"
           className="cast_cards"
-          width="400px"
+          width="380px"
         />
       </div>
     </div>
